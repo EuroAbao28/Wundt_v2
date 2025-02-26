@@ -803,7 +803,6 @@ function App() {
         {/* contact */}
         <div className="px-6 lg:px-12">
           <div className="mt-40 mb-12  max-w-7xl mx-auto">
-            ``{" "}
             <div className="flex justify-center flex-col items-center gap-2">
               <h1 className="text-3xl font-semibold  text-center">
                 Reach Out to Us
@@ -826,14 +825,14 @@ function App() {
                       </span>
                       0939-902-6188
                     </div>
-                    <p className="flex items-start gap-4 text-sm ">
+                    <p className="flex items-start gap-4 text-sm">
                       <span className="text-emerald-600 text-base">
                         <MdLocationOn />
                       </span>
                       2/F ENCARNACION BLDG., RIOFERIO RD., COR. ARELLANO ST.,
                       DAGUPAN CITY, PANGASINAN
                     </p>
-                    <div className="flex items-center gap-4 text-sm ">
+                    <div className="flex items-center gap-4 text-sm truncate">
                       <span className="text-emerald-600 text-base">
                         <MdOutlineFacebook />
                       </span>
@@ -858,7 +857,7 @@ function App() {
                       2/F EL SENOR JESUS APT., QUIRINO AVE., TAMAG VIGAN CITY,
                       ILOCOS SUR
                     </div>
-                    <div className="flex items-center gap-4 text-sm ">
+                    <div className="flex items-center gap-4 text-sm truncate">
                       <span className="text-emerald-600 text-base">
                         <MdOutlineFacebook />
                       </span>
@@ -883,7 +882,7 @@ function App() {
                       3/F GR8 CORPORATE CENTRE BYPASS RD., ANONAS URDANETA CITY,
                       PANGASINAN
                     </div>
-                    <div className="flex items-center gap-4 text-sm ">
+                    <div className="flex items-center gap-4 text-sm truncate">
                       <span className="text-emerald-600 text-base">
                         <MdOutlineFacebook />
                       </span>
@@ -907,7 +906,7 @@ function App() {
                       </span>
                       F&M BLDG. NATIONAL HI-WAY BARI MANGALDAN, PANGASINAN
                     </div>
-                    <div className="flex items-center gap-4 text-sm ">
+                    <div className="flex items-center gap-4 text-sm truncate">
                       <span className="text-emerald-600 text-base">
                         <MdOutlineFacebook />
                       </span>
