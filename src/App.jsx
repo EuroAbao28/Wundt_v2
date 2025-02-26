@@ -925,12 +925,14 @@ function App() {
         </div>
 
         {/* footer */}
-        <div className="flex justify-between items-center text-sm px-36 py-4 bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% text-white">
-          <p>© Wundt Psychological Institute. All Rights Reserved. 2025</p>
-          <p className="flex gap-1 items-center">
-            <MdOutlineAlternateEmail />
-            wundt_inst@yahoo.com.ph
-          </p>
+        <div className=" bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% px-6 lg:px-12">
+          <div className="flex justify-between text-sm text-white max-w-7xl mx-auto py-4">
+            <p>© Wundt Psychological Institute. All Rights Reserved. 2025</p>
+            <p className="flex gap-1 items-center">
+              <MdOutlineAlternateEmail />
+              wundt_inst@yahoo.com.ph
+            </p>
+          </div>
         </div>
       </div>
     </>
