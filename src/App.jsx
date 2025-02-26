@@ -53,148 +53,159 @@ function App() {
   return (
     <>
       <div className="font-poppins text-slate-800">
-        <header className="flex justify-between items-center bg-white px-36 py-4 sticky top-0 z-20 shadow-card2">
-          <div className="flex items-center gap-2">
-            <img src={logo} alt="logo" className="w-10 rounded-full" />
-            <h1 className="font-semibold text-emerald-600 uppercase">
-              Wundt Psychological Institute
-            </h1>
-          </div>
+        {/* nav */}
+        <header className=" bg-white sticky top-0 z-20 shadow-card2">
+          <div className="bg-red-500 max-w-7xl mx-auto py-4 flex justify-between">
+            <div className="flex items-center gap-2">
+              <img src={logo} alt="logo" className="w-10 rounded-full" />
+              <h1 className="font-semibold text-emerald-600 uppercase">
+                Wundt Psychological Institute
+              </h1>
+            </div>
 
-          <nav className="flex gap-2 text-sm ">
-            <li className="list-none relative group py-2 px-4 cursor-pointer">
-              <p className="group-hover:text-emerald-600 transition-all duration-500">
-                Home
-              </p>
-              <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full opacity-0 group-hover:opacity-100"></span>
-            </li>
-            <li className="list-none relative group py-2 px-4 cursor-pointer">
-              <p className="group-hover:text-emerald-600 transition-all duration-500">
-                Services
-              </p>
-              <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
-            </li>
-            <li className="list-none relative group py-2 px-4 cursor-pointer">
-              <p className="group-hover:text-emerald-600 transition-all duration-500">
-                About
-              </p>
-              <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
-            </li>
-            <li className="list-none relative group py-2 px-4 cursor-pointer">
-              <p className="group-hover:text-emerald-600 transition-all duration-500">
-                Gallery
-              </p>
-              <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
-            </li>
-            <li className="list-none relative group py-2 px-4 cursor-pointer">
-              <p className="group-hover:text-emerald-600 transition-all duration-500">
-                News
-              </p>
-              <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
-            </li>
-            <li className="list-none relative group py-2 px-4 cursor-pointer">
-              <p className="group-hover:text-emerald-600 transition-all duration-500">
-                Contact
-              </p>
-              <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
-            </li>
-          </nav>
+            <nav className="flex gap-2 text-sm ">
+              <li className="list-none relative group py-2 px-4 cursor-pointer">
+                <p className="group-hover:text-emerald-600 transition-all duration-500">
+                  Home
+                </p>
+                <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full opacity-0 group-hover:opacity-100"></span>
+              </li>
+              <li className="list-none relative group py-2 px-4 cursor-pointer">
+                <p className="group-hover:text-emerald-600 transition-all duration-500">
+                  Services
+                </p>
+                <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
+              </li>
+              <li className="list-none relative group py-2 px-4 cursor-pointer">
+                <p className="group-hover:text-emerald-600 transition-all duration-500">
+                  About
+                </p>
+                <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
+              </li>
+              <li className="list-none relative group py-2 px-4 cursor-pointer">
+                <p className="group-hover:text-emerald-600 transition-all duration-500">
+                  Gallery
+                </p>
+                <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
+              </li>
+              <li className="list-none relative group py-2 px-4 cursor-pointer">
+                <p className="group-hover:text-emerald-600 transition-all duration-500">
+                  News
+                </p>
+                <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
+              </li>
+              <li className="list-none relative group py-2 px-4 cursor-pointer">
+                <p className="group-hover:text-emerald-600 transition-all duration-500">
+                  Contact
+                </p>
+                <span className="absolute left-0 bottom-0 right-0 scale-x-0 origin-left group-hover:scale-x-100 h-0.5 transition-all duration-500 bg-emerald-600 rounded-full"></span>
+              </li>
+            </nav>
+          </div>
         </header>
 
         {/* home */}
         <div
           style={{ backgroundImage: `url(${b1})` }}
-          className="h-[40rem] bg-cover bg-center relative"
+          className="h-[40rem] bg-cover bg-center "
         >
-          <div className="backdrop-blur-sm bg-gradient-to-r from-white  to-white/0 h-full flex items-center px-36 gap-8 ">
-            <div className="max-w-[45rem]">
-              <h1 className="font-bold text-4xl ">
-                Premiere Provider of
-                <span className="text-emerald-600">
-                  {" "}
-                  Psychological Counseling
-                </span>{" "}
-                &<span className="text-emerald-600"> Educational Services</span>
-              </h1>
+          <div className="bg-red-500 h-full max-w-7xl mx-auto relative">
+            <div className="backdrop-blur-sm bg-gradient-to-r from-white to-white/0 h-full flex items-center gap-8 ">
+              <div className="max-w-[45rem]">
+                <h1 className="font-bold text-4xl ">
+                  Premiere Provider of
+                  <span className="text-emerald-600">
+                    {" "}
+                    Psychological Counseling
+                  </span>{" "}
+                  &
+                  <span className="text-emerald-600">
+                    {" "}
+                    Educational Services
+                  </span>
+                </h1>
 
-              <p className="mt-4  text-sm">
-                Professional Regulation Commission - Board of Psychology Permit
-                to Operate No. 03
-              </p>
+                <p className="mt-4  text-sm">
+                  Professional Regulation Commission - Board of Psychology
+                  Permit to Operate No. 03
+                </p>
 
-              <div className="mt-8 flex gap-4">
-                <button className="bg-radial-[at_-50%_-50%] from-green-500 to-emerald-600 to-75% text-sm text-white px-8 py-4 font-semibold rounded  ">
-                  Get Appointment
-                </button>
+                <div className="mt-8 flex gap-4">
+                  <button className="bg-radial-[at_-50%_-50%] from-green-500 to-emerald-600 to-75% text-sm text-white px-8 py-4 font-semibold rounded  ">
+                    Get Appointment
+                  </button>
 
-                <button className="bg-radial-[at_-50%_-50%] from-slate-600 to-slate-800 to-75% text-sm text-white px-8 py-4 font-semibold rounded  ">
-                  Learn More
-                </button>
+                  <button className="bg-radial-[at_-50%_-50%] from-slate-600 to-slate-800 to-75% text-sm text-white px-8 py-4 font-semibold rounded  ">
+                    Learn More
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex justify-center gap-8 absolute -bottom-44 left-0 right-0 px-36">
-            <div className="flex-1 flex flex-col relative p-8 rounded shadow-lg text-white text-sm bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% overflow-hidden hover:shadow-card transition-all duration-500 hover:-translate-y-1">
-              <h3 className="mt-2 text-xl font-semibold"> Who We Are</h3>
-              <p className="mt-4 flex-1">
-                Providing affordable and quality psychological, counseling, and
-                educational services.
-              </p>
+            <div className="flex justify-center gap-8 absolute -bottom-44 left-0 right-0">
+              <div className="flex-1 flex flex-col relative p-8 rounded shadow-lg text-white text-sm bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% overflow-hidden hover:shadow-card transition-all duration-500 hover:-translate-y-1">
+                <h3 className="mt-2 text-xl font-semibold"> Who We Are</h3>
+                <p className="mt-4 flex-1">
+                  Providing affordable and quality psychological, counseling,
+                  and educational services.
+                </p>
 
-              <button className="flex items-center gap-4 mt-6 uppercase font-semibold ">
-                Learn more <FaArrowRightLong />
-              </button>
+                <button className="flex items-center gap-4 mt-6 uppercase font-semibold ">
+                  Learn more <FaArrowRightLong />
+                </button>
 
-              <RiServiceFill className="absolute text-9xl -right-4 -bottom-6 text-white/15" />
-            </div>
+                <RiServiceFill className="absolute text-9xl -right-4 -bottom-6 text-white/15" />
+              </div>
 
-            <div className="flex-1 flex flex-col relative p-8 rounded shadow-lg text-white text-sm bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% overflow-hidden hover:shadow-card transition-all duration-500 hover:-translate-y-1">
-              <h3 className="mt-2 text-xl font-semibold">What We Offer</h3>
-              <p className="mt-4 flex-1">
-                From psychological testing to counseling and development
-                programs.
-              </p>
+              <div className="flex-1 flex flex-col relative p-8 rounded shadow-lg text-white text-sm bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% overflow-hidden hover:shadow-card transition-all duration-500 hover:-translate-y-1">
+                <h3 className="mt-2 text-xl font-semibold">What We Offer</h3>
+                <p className="mt-4 flex-1">
+                  From psychological testing to counseling and development
+                  programs.
+                </p>
 
-              <button className="flex items-center gap-4 mt-6 uppercase font-semibold ">
-                Learn more <FaArrowRightLong />
-              </button>
+                <button className="flex items-center gap-4 mt-6 uppercase font-semibold ">
+                  Learn more <FaArrowRightLong />
+                </button>
 
-              <HiClipboardDocumentCheck className="absolute text-9xl -right-6 -bottom-7 text-white/15" />
-            </div>
+                <HiClipboardDocumentCheck className="absolute text-9xl -right-6 -bottom-7 text-white/15" />
+              </div>
 
-            <div className="flex-1 flex flex-col relative p-8 rounded shadow-lg text-white text-sm bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% overflow-hidden hover:shadow-card transition-all duration-500 hover:-translate-y-1">
-              <h3 className="mt-2 text-xl font-semibold">What Drives Us</h3>
-              <p className="mt-4 flex-1">
-                Passion for service, commitment to quality, and care that makes
-                a difference.
-              </p>
+              <div className="flex-1 flex flex-col relative p-8 rounded shadow-lg text-white text-sm bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% overflow-hidden hover:shadow-card transition-all duration-500 hover:-translate-y-1">
+                <h3 className="mt-2 text-xl font-semibold">What Drives Us</h3>
+                <p className="mt-4 flex-1">
+                  Passion for service, commitment to quality, and care that
+                  makes a difference.
+                </p>
 
-              <button className="flex items-center gap-4 mt-6 uppercase font-semibold ">
-                Learn more <FaArrowRightLong />
-              </button>
+                <button className="flex items-center gap-4 mt-6 uppercase font-semibold ">
+                  Learn more <FaArrowRightLong />
+                </button>
 
-              <FaHandsHelping className="absolute text-9xl -right-0 -bottom-5 text-white/15" />
-            </div>
+                <FaHandsHelping className="absolute text-9xl -right-0 -bottom-5 text-white/15" />
+              </div>
 
-            <div className="flex-1 flex flex-col relative p-8 rounded shadow-lg text-white text-sm bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% overflow-hidden hover:shadow-card transition-all duration-500 hover:-translate-y-1">
-              <h3 className="mt-2 text-xl font-semibold">Visit Our Branches</h3>
-              <p className="mt-4 flex-1">
-                Serving Dagupan, Vigan, Urdaneta, and Mangaldan with accessible,
-                expert care.
-              </p>
+              <div className="flex-1 flex flex-col relative p-8 rounded shadow-lg text-white text-sm bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% overflow-hidden hover:shadow-card transition-all duration-500 hover:-translate-y-1">
+                <h3 className="mt-2 text-xl font-semibold">
+                  Visit Our Branches
+                </h3>
+                <p className="mt-4 flex-1">
+                  Serving Dagupan, Vigan, Urdaneta, and Mangaldan with
+                  accessible, expert care.
+                </p>
 
-              <button className="flex items-center gap-4 mt-6 uppercase font-semibold ">
-                Learn more <FaArrowRightLong />
-              </button>
+                <button className="flex items-center gap-4 mt-6 uppercase font-semibold ">
+                  Learn more <FaArrowRightLong />
+                </button>
 
-              <FaHouseChimneyMedical className="absolute text-9xl -right-5 -bottom-5 text-white/15" />
+                <FaHouseChimneyMedical className="absolute text-9xl -right-5 -bottom-5 text-white/15" />
+              </div>
             </div>
           </div>
         </div>
 
         {/* why choose us */}
-        <div className="mt-72 px-36">
+        <div className="mt-72 bg-red-500 max-w-7xl mx-auto">
           <div className="flex justify-center flex-col items-center gap-2">
             <h1 className="text-3xl font-semibold  text-center">
               Why Choose Wundt Psychological Institute?
@@ -265,7 +276,7 @@ function App() {
         </div>
 
         {/* services */}
-        <div className="mt-40 px-36  ">
+        <div className="mt-40 bg-red-500 max-w-7xl mx-auto">
           <div className="flex justify-center flex-col items-center gap-2">
             <h1 className="text-3xl font-semibold  text-center">
               Comprehensive Services We Offer
@@ -364,130 +375,135 @@ function App() {
 
         {/* about */}
         <div
-          className="mt-40 text-white bg-center bg-cover"
           style={{ backgroundImage: `url(${b1})` }}
+          className="mt-40 text-white bg-center bg-cover"
         >
-          <div className="px-36 p-12 bg-radial-[at_-35%_15%] from-green-500/90 to-emerald-600/90 to-75%">
-            <div className="flex justify-center flex-col items-center gap-2 ">
-              <h1 className="text-3xl font-semibold  text-center">About us</h1>
+          <div className="p-12 bg-radial-[at_-35%_15%] from-green-500/90 to-emerald-600/90 to-75%">
+            <div className="bg-red-500 max-w-7xl mx-auto">
+              <div className="flex justify-center flex-col items-center gap-2 ">
+                <h1 className="text-3xl font-semibold  text-center">
+                  About us
+                </h1>
 
-              <div className="flex items-center text-3xl text-white">
-                <TbMinus />
-                <TbActivityHeartbeat />
-                <TbMinus />
-              </div>
-            </div>
-
-            <div className="flex mt-12 gap-12">
-              <div className="flex-1 grid grid-cols-2 grid-rows-2 aspect-square gap-4">
-                <div
-                  style={{ backgroundImage: `url(${s1})` }}
-                  className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
-                >
-                  <div className="h-full p-4 bg-white/80 text-emerald-800 backdrop-blur-sm text-sm row-start-2">
-                    <h3 className="font-semibold">Compassion</h3>
-                    <p className="mt-4">
-                      Deliver services with utmost care founded on love for
-                      humanity.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  style={{ backgroundImage: `url(${b1})` }}
-                  className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
-                >
-                  <div className="h-full p-4 bg-white/80 text-emerald-800 backdrop-blur-sm text-sm row-start-2">
-                    <h3 className="font-semibold">Accessibility</h3>
-                    <p className="mt-4">Bring services closer to clients.</p>
-                  </div>
-                </div>
-
-                <div
-                  style={{ backgroundImage: `url(${s2})` }}
-                  className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
-                >
-                  <div className="h-full p-4 bg-white/80 text-emerald-800 backdrop-blur-sm text-sm row-start-2">
-                    <h3 className="font-semibold">Responsibility</h3>
-                    <p className="mt-4">
-                      Respond to clients needs the best possible way without
-                      prejudice to race, sex, socio-economic status, or any
-                      other factors.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  style={{ backgroundImage: `url(${s5})` }}
-                  className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
-                >
-                  <div className="h-full p-4 bg-white/80 text-emerald-800 backdrop-blur-sm text-sm row-start-2">
-                    <h3 className="font-semibold">Excellence</h3>
-                    <p className="mt-4">
-                      Deliver services at par professional and ethical standards
-                      through licensed and competent human resources.
-                    </p>
-                  </div>
+                <div className="flex items-center text-3xl text-white">
+                  <TbMinus />
+                  <TbActivityHeartbeat />
+                  <TbMinus />
                 </div>
               </div>
 
-              <div className="flex-1 flex flex-col gap-8">
-                <div>
-                  <h3 className="uppercase font-semibold text-lg">History</h3>
-                  <p className="text-sm mt-4">
-                    The Wundt Psychological Institute (formerly{" "}
-                    <span className="italic">Wundt Institute</span>) was
-                    conceived through the wishful thinking of its founder and
-                    director, Dr. Nhorty U. Domenden. His decades of exposure in
-                    the academe and clinical psychology practice opened his eyes
-                    to the need for an institution that caters to the various
-                    psychological counseling and educational needs of
-                    Pangasinenses. With zeal and enthusiasm, guided by his
-                    desire to "
-                    <span className="italic">create opportunities</span>", he
-                    took the risk of establishing the Wundt Psychological
-                    Institute. The institute was founded in January 2015 and has
-                    since rendered services to various academic, legal,
-                    industrial, and clinical institutions, primarily in
-                    Pangasinan, before expanding its operations to several
-                    provinces in North and Central Luzon.
-                  </p>
+              <div className="flex mt-12 gap-12">
+                <div className="flex-1 grid grid-cols-2 grid-rows-2 aspect-square gap-4">
+                  <div
+                    style={{ backgroundImage: `url(${s1})` }}
+                    className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
+                  >
+                    <div className="h-full p-4 bg-white/80 text-emerald-800 backdrop-blur-sm text-sm row-start-2">
+                      <h3 className="font-semibold">Compassion</h3>
+                      <p className="mt-4">
+                        Deliver services with utmost care founded on love for
+                        humanity.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    style={{ backgroundImage: `url(${b1})` }}
+                    className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
+                  >
+                    <div className="h-full p-4 bg-white/80 text-emerald-800 backdrop-blur-sm text-sm row-start-2">
+                      <h3 className="font-semibold">Accessibility</h3>
+                      <p className="mt-4">Bring services closer to clients.</p>
+                    </div>
+                  </div>
+
+                  <div
+                    style={{ backgroundImage: `url(${s2})` }}
+                    className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
+                  >
+                    <div className="h-full p-4 bg-white/80 text-emerald-800 backdrop-blur-sm text-sm row-start-2">
+                      <h3 className="font-semibold">Responsibility</h3>
+                      <p className="mt-4">
+                        Respond to clients needs the best possible way without
+                        prejudice to race, sex, socio-economic status, or any
+                        other factors.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    style={{ backgroundImage: `url(${s5})` }}
+                    className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
+                  >
+                    <div className="h-full p-4 bg-white/80 text-emerald-800 backdrop-blur-sm text-sm row-start-2">
+                      <h3 className="font-semibold">Excellence</h3>
+                      <p className="mt-4">
+                        Deliver services at par professional and ethical
+                        standards through licensed and competent human
+                        resources.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="text-sm grid grid-cols-2 gap-4 mt-4">
-                  <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
-                    <h3 className="font-semibold uppercase">Mission</h3>
-                    <p className="mt-4">
-                      Deliver quality, accessible, and affordable psychological,
-                      counseling and educational services that suit the needs of
-                      its clientele.
+                <div className="flex-1 flex flex-col gap-8">
+                  <div>
+                    <h3 className="uppercase font-semibold text-lg">History</h3>
+                    <p className="text-sm mt-4">
+                      The Wundt Psychological Institute (formerly{" "}
+                      <span className="italic">Wundt Institute</span>) was
+                      conceived through the wishful thinking of its founder and
+                      director, Dr. Nhorty U. Domenden. His decades of exposure
+                      in the academe and clinical psychology practice opened his
+                      eyes to the need for an institution that caters to the
+                      various psychological counseling and educational needs of
+                      Pangasinenses. With zeal and enthusiasm, guided by his
+                      desire to "
+                      <span className="italic">create opportunities</span>", he
+                      took the risk of establishing the Wundt Psychological
+                      Institute. The institute was founded in January 2015 and
+                      has since rendered services to various academic, legal,
+                      industrial, and clinical institutions, primarily in
+                      Pangasinan, before expanding its operations to several
+                      provinces in North and Central Luzon.
                     </p>
                   </div>
 
-                  <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
-                    <h3 className="font-semibold uppercase">Vision</h3>
-                    <p className="mt-4">
-                      Be the leading provider-of-choice if psychological,
-                      counseling and educational services in North and Central
-                      Luzon and be recognized nationally.
-                    </p>
-                  </div>
+                  <div className="text-sm grid grid-cols-2 gap-4 mt-4">
+                    <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
+                      <h3 className="font-semibold uppercase">Mission</h3>
+                      <p className="mt-4">
+                        Deliver quality, accessible, and affordable
+                        psychological, counseling and educational services that
+                        suit the needs of its clientele.
+                      </p>
+                    </div>
 
-                  <div className="outline-2 outline-white/15 rounded p-4 bg-white/10 col-span-2">
-                    <h3 className="font-semibold uppercase">Objectives</h3>
-                    <ol className="list-disc mt-4 pl-4">
-                      <li>
-                        Promote ethical and high standards practice of
-                        psychological, counseling and educational services.
-                      </li>
-                      <li>
-                        Provide affordable services without sacrificing its
-                        quality.
-                      </li>
-                      <li>
-                        Extend free services to less fortunate individuals.
-                      </li>
-                    </ol>
+                    <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
+                      <h3 className="font-semibold uppercase">Vision</h3>
+                      <p className="mt-4">
+                        Be the leading provider-of-choice if psychological,
+                        counseling and educational services in North and Central
+                        Luzon and be recognized nationally.
+                      </p>
+                    </div>
+
+                    <div className="outline-2 outline-white/15 rounded p-4 bg-white/10 col-span-2">
+                      <h3 className="font-semibold uppercase">Objectives</h3>
+                      <ol className="list-disc mt-4 pl-4">
+                        <li>
+                          Promote ethical and high standards practice of
+                          psychological, counseling and educational services.
+                        </li>
+                        <li>
+                          Provide affordable services without sacrificing its
+                          quality.
+                        </li>
+                        <li>
+                          Extend free services to less fortunate individuals.
+                        </li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -496,7 +512,7 @@ function App() {
         </div>
 
         {/* gallery */}
-        <div className="mt-40 px-36 ">
+        <div className="mt-40 bg-red-500 max-w-7xl mx-auto">
           <div className="flex justify-center flex-col items-center gap-2">
             <h1 className="text-3xl font-semibold  text-center">Our Gallery</h1>
 
@@ -578,191 +594,193 @@ function App() {
           style={{ backgroundImage: `url(${b1})` }}
           className="mt-40  bg-center bg-cover"
         >
-          <div className="px-36 p-12 bg-gradient-to-b from-white from-5% to-emerald-600/60 backdrop-blur-sm">
-            <div className="flex justify-center flex-col items-center gap-2">
-              <h1 className="text-3xl font-semibold  text-center">
-                Latest News & Updates
-              </h1>
+          <div className="p-12 bg-gradient-to-b from-white from-5% to-emerald-600/60 backdrop-blur-sm">
+            <div className="bg-red-500 max-w-7xl mx-auto">
+              <div className="flex justify-center flex-col items-center gap-2">
+                <h1 className="text-3xl font-semibold  text-center">
+                  Latest News & Updates
+                </h1>
 
-              <div className="flex items-center text-3xl text-emerald-600">
-                <TbMinus />
-                <TbActivityHeartbeat />
-                <TbMinus />
-              </div>
-            </div>
-
-            <div className="mt-12 flex gap-2 snap-x snap-mandatory overflow-x-auto pt-2 scroll-smooth scrollbar scrollbar-thumb-white scrollbar-track-white/30 scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full pb-6">
-              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
-                <img
-                  src={s9}
-                  alt=""
-                  className="object-center object-cover h-full w-full"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
-                  <p className="text-sm text-white font-semibold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae, sit. Lorem, ipsum dolor.
-                  </p>
-                  <p className="text-white/80 text-sm line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Facilis rem eos ratione explicabo earum dignissimos laborum
-                    laudantium dolorum assumenda animi.
-                  </p>
-                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
-                    Read more
-                  </button>
+                <div className="flex items-center text-3xl text-emerald-600">
+                  <TbMinus />
+                  <TbActivityHeartbeat />
+                  <TbMinus />
                 </div>
               </div>
 
-              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
-                <img
-                  src={s7}
-                  alt=""
-                  className="object-center object-cover h-full w-full"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
-                  <p className="text-sm text-white font-semibold">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <p className="text-white/80 text-sm line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Facilis rem eos ratione explicabo earum dignissimos laborum
-                    laudantium dolorum assumenda animi.
-                  </p>
-                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
-                    Read more
-                  </button>
+              <div className="mt-12 flex gap-2 snap-x snap-mandatory overflow-x-auto pt-2 scroll-smooth scrollbar scrollbar-thumb-white scrollbar-track-white/30 scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full pb-6">
+                <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                  <img
+                    src={s9}
+                    alt=""
+                    className="object-center object-cover h-full w-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                    <p className="text-sm text-white font-semibold">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae, sit. Lorem, ipsum dolor.
+                    </p>
+                    <p className="text-white/80 text-sm line-clamp-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis rem eos ratione explicabo earum dignissimos
+                      laborum laudantium dolorum assumenda animi.
+                    </p>
+                    <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                      Read more
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
-                <img
-                  src={s2}
-                  alt=""
-                  className="object-center object-cover h-full w-full"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
-                  <p className="text-sm text-white font-semibold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Saepe.
-                  </p>
-                  <p className="text-white/80 text-sm line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Facilis rem eos ratione explicabo earum dignissimos laborum
-                    laudantium dolorum assumenda animi.
-                  </p>
-                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
-                    Read more
-                  </button>
+                <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                  <img
+                    src={s7}
+                    alt=""
+                    className="object-center object-cover h-full w-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                    <p className="text-sm text-white font-semibold">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <p className="text-white/80 text-sm line-clamp-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis rem eos ratione explicabo earum dignissimos
+                      laborum laudantium dolorum assumenda animi.
+                    </p>
+                    <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                      Read more
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
-                <img
-                  src={s3}
-                  alt=""
-                  className="object-center object-cover h-full w-full"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
-                  <p className="text-sm text-white font-semibold">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Fugiat ducimus voluptates id.
-                  </p>
-                  <p className="text-white/80 text-sm line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Facilis rem eos ratione explicabo earum dignissimos laborum
-                    laudantium dolorum assumenda animi.
-                  </p>
-                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
-                    Read more
-                  </button>
+                <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                  <img
+                    src={s2}
+                    alt=""
+                    className="object-center object-cover h-full w-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                    <p className="text-sm text-white font-semibold">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe.
+                    </p>
+                    <p className="text-white/80 text-sm line-clamp-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis rem eos ratione explicabo earum dignissimos
+                      laborum laudantium dolorum assumenda animi.
+                    </p>
+                    <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                      Read more
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
-                <img
-                  src={s9}
-                  alt=""
-                  className="object-center object-cover h-full w-full"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
-                  <p className="text-sm text-white font-semibold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae, sit. Lorem, ipsum dolor.
-                  </p>
-                  <p className="text-white/80 text-sm line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Facilis rem eos ratione explicabo earum dignissimos laborum
-                    laudantium dolorum assumenda animi.
-                  </p>
-                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
-                    Read more
-                  </button>
+                <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                  <img
+                    src={s3}
+                    alt=""
+                    className="object-center object-cover h-full w-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                    <p className="text-sm text-white font-semibold">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Fugiat ducimus voluptates id.
+                    </p>
+                    <p className="text-white/80 text-sm line-clamp-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis rem eos ratione explicabo earum dignissimos
+                      laborum laudantium dolorum assumenda animi.
+                    </p>
+                    <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                      Read more
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
-                <img
-                  src={s7}
-                  alt=""
-                  className="object-center object-cover h-full w-full"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
-                  <p className="text-sm text-white font-semibold">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <p className="text-white/80 text-sm line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Facilis rem eos ratione explicabo earum dignissimos laborum
-                    laudantium dolorum assumenda animi.
-                  </p>
-                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
-                    Read more
-                  </button>
+                <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                  <img
+                    src={s9}
+                    alt=""
+                    className="object-center object-cover h-full w-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                    <p className="text-sm text-white font-semibold">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae, sit. Lorem, ipsum dolor.
+                    </p>
+                    <p className="text-white/80 text-sm line-clamp-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis rem eos ratione explicabo earum dignissimos
+                      laborum laudantium dolorum assumenda animi.
+                    </p>
+                    <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                      Read more
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
-                <img
-                  src={s2}
-                  alt=""
-                  className="object-center object-cover h-full w-full"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
-                  <p className="text-sm text-white font-semibold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Saepe.
-                  </p>
-                  <p className="text-white/80 text-sm line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Facilis rem eos ratione explicabo earum dignissimos laborum
-                    laudantium dolorum assumenda animi.
-                  </p>
-                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
-                    Read more
-                  </button>
+                <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                  <img
+                    src={s7}
+                    alt=""
+                    className="object-center object-cover h-full w-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                    <p className="text-sm text-white font-semibold">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <p className="text-white/80 text-sm line-clamp-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis rem eos ratione explicabo earum dignissimos
+                      laborum laudantium dolorum assumenda animi.
+                    </p>
+                    <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                      Read more
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
-                <img
-                  src={s3}
-                  alt=""
-                  className="object-center object-cover h-full w-full"
-                />
-                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
-                  <p className="text-sm text-white font-semibold">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Fugiat ducimus voluptates id.
-                  </p>
-                  <p className="text-white/80 text-sm line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Facilis rem eos ratione explicabo earum dignissimos laborum
-                    laudantium dolorum assumenda animi.
-                  </p>
-                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
-                    Read more
-                  </button>
+                <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                  <img
+                    src={s2}
+                    alt=""
+                    className="object-center object-cover h-full w-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                    <p className="text-sm text-white font-semibold">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe.
+                    </p>
+                    <p className="text-white/80 text-sm line-clamp-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis rem eos ratione explicabo earum dignissimos
+                      laborum laudantium dolorum assumenda animi.
+                    </p>
+                    <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+
+                <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                  <img
+                    src={s3}
+                    alt=""
+                    className="object-center object-cover h-full w-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                    <p className="text-sm text-white font-semibold">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Fugiat ducimus voluptates id.
+                    </p>
+                    <p className="text-white/80 text-sm line-clamp-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis rem eos ratione explicabo earum dignissimos
+                      laborum laudantium dolorum assumenda animi.
+                    </p>
+                    <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                      Read more
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -770,7 +788,7 @@ function App() {
         </div>
 
         {/* contact */}
-        <div className="mt-40 px-36 mb-12">
+        <div className="mt-40 mb-12 bg-red-500 max-w-7xl mx-auto">
           <div className="flex justify-center flex-col items-center gap-2">
             <h1 className="text-3xl font-semibold  text-center">
               Reach Out to Us
