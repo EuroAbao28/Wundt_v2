@@ -55,7 +55,7 @@ function App() {
       <div className="font-poppins text-slate-800">
         {/* nav */}
         <header className=" bg-white sticky top-0 z-20 shadow-card2 px-6 lg:px-12">
-          <div className="bg-red-500 max-w-7xl mx-auto py-4 flex justify-between">
+          <div className=" max-w-7xl mx-auto py-4 flex justify-between">
             <div className="flex items-center gap-2">
               <img src={logo} alt="logo" className="w-10 rounded-full" />
               <h1 className="font-semibold text-emerald-600 uppercase">
@@ -207,7 +207,7 @@ function App() {
 
         {/* why choose us */}
         <div className="mt-40 px-6 lg:px-12">
-          <div className=" bg-red-500 max-w-7xl mx-auto ">
+          <div className="  max-w-7xl mx-auto ">
             <div className="flex justify-center flex-col items-center gap-2">
               <h1 className="text-3xl font-semibold  text-center">
                 Why Choose Wundt Psychological Institute?
@@ -282,7 +282,7 @@ function App() {
 
         {/* services */}
         <div className="px-6 lg:px-12">
-          <div className="mt-40 bg-red-500 max-w-7xl mx-auto">
+          <div className="mt-40  max-w-7xl mx-auto">
             <div className="flex justify-center flex-col items-center gap-2">
               <h1 className="text-3xl font-semibold  text-center">
                 Comprehensive Services We Offer
@@ -388,7 +388,7 @@ function App() {
           className="mt-40 text-white bg-center bg-cover"
         >
           <div className="p-6 lg:p-12 bg-radial-[at_-35%_15%] from-green-500/90 to-emerald-600/90 to-75%">
-            <div className="bg-red-500 max-w-7xl mx-auto">
+            <div className=" max-w-7xl mx-auto">
               <div className="flex justify-center flex-col items-center gap-2 ">
                 <h1 className="text-3xl font-semibold  text-center">
                   About us
@@ -522,7 +522,7 @@ function App() {
 
         {/* gallery */}
         <div className="px-6 lg:px-12">
-          <div className="mt-40 bg-red-500 max-w-7xl mx-auto">
+          <div className="mt-40  max-w-7xl mx-auto">
             <div className="flex justify-center flex-col items-center gap-2">
               <h1 className="text-3xl font-semibold  text-center">
                 Our Gallery
@@ -608,7 +608,7 @@ function App() {
           className="mt-40  bg-center bg-cover"
         >
           <div className="px-6 pb-6 lg:px-12 lg:pb-12 bg-gradient-to-b from-white from-5% to-emerald-600/60 backdrop-blur-sm">
-            <div className="bg-red-500 max-w-7xl mx-auto">
+            <div className=" max-w-7xl mx-auto">
               <div className="flex justify-center flex-col items-center gap-2">
                 <h1 className="text-3xl font-semibold  text-center">
                   Latest News & Updates
@@ -802,7 +802,7 @@ function App() {
 
         {/* contact */}
         <div className="px-6 lg:px-12">
-          <div className="mt-40 mb-12 bg-red-500 max-w-7xl mx-auto">
+          <div className="mt-40 mb-12  max-w-7xl mx-auto">
             <div className="flex justify-center flex-col items-center gap-2">
               <h1 className="text-3xl font-semibold  text-center">
                 Reach Out to Us
