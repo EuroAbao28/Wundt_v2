@@ -5,19 +5,19 @@ import s2 from "./assets/s2.jpg";
 import s3 from "./assets/s3.jpg";
 import s4 from "./assets/s4.jpg";
 import s5 from "./assets/s5.jpg";
-import prof from "./assets/prof.png";
-import r1 from "./assets/r1.jpg";
-import r2 from "./assets/r2.jpg";
-import r3 from "./assets/r3.jpg";
-import r4 from "./assets/r4.jpg";
-import r6 from "./assets/r6.jpg";
+import s6 from "./assets/s6.jpg";
+import s7 from "./assets/s7.jpg";
+import s8 from "./assets/s8.jpg";
+import s9 from "./assets/s9.jpg";
+import s10 from "./assets/s10.jpg";
 
 import {
   FaArrowRightLong,
   FaCalendarCheck,
+  FaFacebook,
   FaHouseChimneyMedical,
 } from "react-icons/fa6";
-import { FaClinicMedical } from "react-icons/fa";
+import { FaClinicMedical, FaPhoneAlt } from "react-icons/fa";
 import { BsFillClipboard2PulseFill } from "react-icons/bs";
 import { RiServiceFill } from "react-icons/ri";
 import { FaHandsHelping } from "react-icons/fa";
@@ -32,17 +32,28 @@ import {
   TbBook,
   TbClipboardList,
   TbPresentation,
+  TbMapPinFilled,
+  TbBrandFacebookFilled,
+  TbPhoneFilled,
 } from "react-icons/tb";
-import { TbActivityHeartbeat } from "react-icons/tb";
+import { TbActivityHeartbeat, TbMinus } from "react-icons/tb";
 import { HiClipboardDocumentCheck } from "react-icons/hi2";
 import { FaUserDoctor } from "react-icons/fa6";
 import { PiGraduationCapBold } from "react-icons/pi";
+import {
+  MdLocationOn,
+  MdOutlineFacebook,
+  MdOutlineAlternateEmail,
+} from "react-icons/md";
+import { BiSolidPhone } from "react-icons/bi";
+import abs from "./assets/abs.svg";
+import MapComponent from "./MapComponent";
 
 function App() {
   return (
     <>
       <div className="font-poppins text-slate-800">
-        <header className="flex justify-between items-center bg-white px-36 py-4 sticky top-0 z-20">
+        <header className="flex justify-between items-center bg-white px-36 py-4 sticky top-0 z-20 shadow-card2">
           <div className="flex items-center gap-2">
             <img src={logo} alt="logo" className="w-10 rounded-full" />
             <h1 className="font-semibold text-emerald-600 uppercase">
@@ -183,16 +194,16 @@ function App() {
         </div>
 
         {/* why choose us */}
-        <div className="mt-64 px-36">
+        <div className="mt-72 px-36">
           <div className="flex justify-center flex-col items-center gap-2">
             <h1 className="text-3xl font-semibold  text-center">
               Why Choose Wundt Psychological Institute?
             </h1>
 
             <div className="flex items-center text-3xl text-emerald-600">
-              <p>-</p>
+              <TbMinus />
               <TbActivityHeartbeat />
-              <p>-</p>
+              <TbMinus />
             </div>
           </div>
 
@@ -254,16 +265,16 @@ function App() {
         </div>
 
         {/* services */}
-        <div className="mt-36 px-36">
+        <div className="mt-40 px-36  ">
           <div className="flex justify-center flex-col items-center gap-2">
             <h1 className="text-3xl font-semibold  text-center">
               Comprehensive Services We Offer
             </h1>
 
             <div className="flex items-center text-3xl text-emerald-600">
-              <p>-</p>
+              <TbMinus />
               <TbActivityHeartbeat />
-              <p>-</p>
+              <TbMinus />
             </div>
           </div>
 
@@ -353,22 +364,22 @@ function App() {
 
         {/* about */}
         <div
+          className="mt-40 text-white bg-center bg-cover"
           style={{ backgroundImage: `url(${b1})` }}
-          className="mt-36 text-white bg-center bg-cover"
         >
           <div className="px-36 p-12 bg-radial-[at_-35%_15%] from-green-500/90 to-emerald-600/90 to-75%">
-            <div className="flex justify-center flex-col items-center gap-2">
+            <div className="flex justify-center flex-col items-center gap-2 ">
               <h1 className="text-3xl font-semibold  text-center">About us</h1>
 
               <div className="flex items-center text-3xl text-white">
-                <p>-</p>
+                <TbMinus />
                 <TbActivityHeartbeat />
-                <p>-</p>
+                <TbMinus />
               </div>
             </div>
 
-            <div className="flex mt-12">
-              <div className="flex-1 grid grid-cols-2 grid-rows-2 aspect-square gap-4 pr-12">
+            <div className="flex mt-12 gap-12">
+              <div className="flex-1 grid grid-cols-2 grid-rows-2 aspect-square gap-4">
                 <div
                   style={{ backgroundImage: `url(${s1})` }}
                   className="bg-center bg-cover grid grid-rows-2 rounded overflow-hidden"
@@ -443,61 +454,450 @@ function App() {
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-semibold">Core Values</h3>
-                  <div className="text-sm grid grid-cols-2 gap-4 mt-4">
-                    <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
-                      <h3 className="font-semibold">Compassion</h3>
-                      <p className="mt-4">
-                        Deliver services with utmost care founded on love for
-                        humanity.
-                      </p>
-                    </div>
+                <div className="text-sm grid grid-cols-2 gap-4 mt-4">
+                  <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
+                    <h3 className="font-semibold uppercase">Mission</h3>
+                    <p className="mt-4">
+                      Deliver quality, accessible, and affordable psychological,
+                      counseling and educational services that suit the needs of
+                      its clientele.
+                    </p>
+                  </div>
 
-                    <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
-                      <h3 className="font-semibold">Accessibility</h3>
-                      <p className="mt-4">Bring services closer to clients.</p>
-                    </div>
+                  <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
+                    <h3 className="font-semibold uppercase">Vision</h3>
+                    <p className="mt-4">
+                      Be the leading provider-of-choice if psychological,
+                      counseling and educational services in North and Central
+                      Luzon and be recognized nationally.
+                    </p>
+                  </div>
 
-                    <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
-                      <h3 className="font-semibold">Compassion</h3>
-                      <p className="mt-4">
-                        Respond to clients needs the best possible way without
-                        prejudice to race, sex, socio-economic status, or any
-                        other factors.
-                      </p>
-                    </div>
-
-                    <div className="outline-2 outline-white/15 rounded p-4 bg-white/10">
-                      <h3 className="font-semibold">Compassion</h3>
-                      <p className="mt-4">
-                        Deliver services at par professional and ethical
-                        standards through licensed and competent human
-                        resources.
-                      </p>
-                    </div>
+                  <div className="outline-2 outline-white/15 rounded p-4 bg-white/10 col-span-2">
+                    <h3 className="font-semibold uppercase">Objectives</h3>
+                    <ol className="list-disc mt-4 pl-4">
+                      <li>
+                        Promote ethical and high standards practice of
+                        psychological, counseling and educational services.
+                      </li>
+                      <li>
+                        Provide affordable services without sacrificing its
+                        quality.
+                      </li>
+                      <li>
+                        Extend free services to less fortunate individuals.
+                      </li>
+                    </ol>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* services */}
-      <div className="mt-16 px-36 mb-36">
-        <div className="flex justify-center flex-col items-center gap-2">
-          <h1 className="text-3xl font-semibold  text-center">Our Gallery</h1>
+        {/* gallery */}
+        <div className="mt-40 px-36 ">
+          <div className="flex justify-center flex-col items-center gap-2">
+            <h1 className="text-3xl font-semibold  text-center">Our Gallery</h1>
 
-          <div className="flex items-center text-3xl text-emerald-600">
-            <p>-</p>
-            <TbActivityHeartbeat />
-            <p>-</p>
+            <div className="flex items-center text-3xl text-emerald-600">
+              <TbMinus />
+              <TbActivityHeartbeat />
+              <TbMinus />
+            </div>
+          </div>
+
+          <div className="mt-12 rounded grid grid-cols-5 gap-2">
+            <div className="overflow-hidden rounded">
+              <img
+                src={s10}
+                alt=""
+                className="object-cover object-center w-full h-[20rem] hover:scale-105 transition-all duration-500"
+              />
+            </div>
+            <div className="col-span-2 overflow-hidden rounded">
+              <img
+                src={s9}
+                alt=""
+                className="object-cover object-center w-full h-[20rem] hover:scale-105 transition-all duration-500"
+              />
+            </div>
+            <div className="overflow-hidden rounded">
+              <img
+                src={s8}
+                alt=""
+                className="object-cover object-center w-full h-[20rem] hover:scale-105 transition-all duration-500"
+              />
+            </div>
+            <div className="overflow-hidden rounded">
+              <img
+                src={s7}
+                alt=""
+                className="object-cover object-center w-full h-[20rem] hover:scale-105 transition-all duration-500"
+              />
+            </div>
+            <div className="overflow-hidden rounded">
+              <img
+                src={s6}
+                alt=""
+                className="object-cover object-center w-full h-[20rem] hover:scale-105 transition-all duration-500"
+              />
+            </div>
+            <div className="overflow-hidden rounded">
+              <img
+                src={s5}
+                alt=""
+                className="object-cover object-center w-full h-[20rem] hover:scale-105 transition-all duration-500"
+              />
+            </div>
+            <div className="col-span-2 overflow-hidden rounded">
+              <img
+                src={s4}
+                alt=""
+                className="object-cover object-center w-full h-[20rem] hover:scale-105 transition-all duration-500"
+              />
+            </div>
+            <div className="overflow-hidden rounded">
+              <img
+                src={s3}
+                alt=""
+                className="object-cover object-center w-full h-[20rem] hover:scale-105 transition-all duration-500"
+              />
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-6">
+            <button className="outline outline-emerald-600 px-6 py-2 text-sm rounded shadow-card2 text-emerald-600">
+              Show more
+            </button>
           </div>
         </div>
 
-        <div className="h-[20rem] outline outline-slate-400 mt-12 rounded flex items-center justify-center">
-          PICS HERE
+        {/* news */}
+        <div
+          style={{ backgroundImage: `url(${b1})` }}
+          className="mt-40  bg-center bg-cover"
+        >
+          <div className="px-36 p-12 bg-gradient-to-b from-white from-5% to-emerald-600/60 backdrop-blur-sm">
+            <div className="flex justify-center flex-col items-center gap-2">
+              <h1 className="text-3xl font-semibold  text-center">
+                Latest News & Updates
+              </h1>
+
+              <div className="flex items-center text-3xl text-emerald-600">
+                <TbMinus />
+                <TbActivityHeartbeat />
+                <TbMinus />
+              </div>
+            </div>
+
+            <div className="mt-12 flex gap-2 snap-x snap-mandatory overflow-x-auto pt-2 scroll-smooth scrollbar scrollbar-thumb-white scrollbar-track-white/30 scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full pb-6">
+              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                <img
+                  src={s9}
+                  alt=""
+                  className="object-center object-cover h-full w-full"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                  <p className="text-sm text-white font-semibold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, sit. Lorem, ipsum dolor.
+                  </p>
+                  <p className="text-white/80 text-sm line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis rem eos ratione explicabo earum dignissimos laborum
+                    laudantium dolorum assumenda animi.
+                  </p>
+                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                    Read more
+                  </button>
+                </div>
+              </div>
+
+              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                <img
+                  src={s7}
+                  alt=""
+                  className="object-center object-cover h-full w-full"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                  <p className="text-sm text-white font-semibold">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                  <p className="text-white/80 text-sm line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis rem eos ratione explicabo earum dignissimos laborum
+                    laudantium dolorum assumenda animi.
+                  </p>
+                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                    Read more
+                  </button>
+                </div>
+              </div>
+
+              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                <img
+                  src={s2}
+                  alt=""
+                  className="object-center object-cover h-full w-full"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                  <p className="text-sm text-white font-semibold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe.
+                  </p>
+                  <p className="text-white/80 text-sm line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis rem eos ratione explicabo earum dignissimos laborum
+                    laudantium dolorum assumenda animi.
+                  </p>
+                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                    Read more
+                  </button>
+                </div>
+              </div>
+
+              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                <img
+                  src={s3}
+                  alt=""
+                  className="object-center object-cover h-full w-full"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                  <p className="text-sm text-white font-semibold">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat ducimus voluptates id.
+                  </p>
+                  <p className="text-white/80 text-sm line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis rem eos ratione explicabo earum dignissimos laborum
+                    laudantium dolorum assumenda animi.
+                  </p>
+                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                    Read more
+                  </button>
+                </div>
+              </div>
+
+              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                <img
+                  src={s9}
+                  alt=""
+                  className="object-center object-cover h-full w-full"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                  <p className="text-sm text-white font-semibold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, sit. Lorem, ipsum dolor.
+                  </p>
+                  <p className="text-white/80 text-sm line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis rem eos ratione explicabo earum dignissimos laborum
+                    laudantium dolorum assumenda animi.
+                  </p>
+                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                    Read more
+                  </button>
+                </div>
+              </div>
+
+              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                <img
+                  src={s7}
+                  alt=""
+                  className="object-center object-cover h-full w-full"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                  <p className="text-sm text-white font-semibold">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                  <p className="text-white/80 text-sm line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis rem eos ratione explicabo earum dignissimos laborum
+                    laudantium dolorum assumenda animi.
+                  </p>
+                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                    Read more
+                  </button>
+                </div>
+              </div>
+
+              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                <img
+                  src={s2}
+                  alt=""
+                  className="object-center object-cover h-full w-full"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                  <p className="text-sm text-white font-semibold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe.
+                  </p>
+                  <p className="text-white/80 text-sm line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis rem eos ratione explicabo earum dignissimos laborum
+                    laudantium dolorum assumenda animi.
+                  </p>
+                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                    Read more
+                  </button>
+                </div>
+              </div>
+
+              <div className="rounded overflow-hidden aspect-square relative group transition-all hover:-translate-y-1 duration-500 w-[20rem] shrink-0 snap-center">
+                <img
+                  src={s3}
+                  alt=""
+                  className="object-center object-cover h-full w-full"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2  gap-2 bg-gradient-to-b from-black/10 to-black/80 group-hover:to-black/90 transition-all duration-500">
+                  <p className="text-sm text-white font-semibold">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat ducimus voluptates id.
+                  </p>
+                  <p className="text-white/80 text-sm line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis rem eos ratione explicabo earum dignissimos laborum
+                    laudantium dolorum assumenda animi.
+                  </p>
+                  <button className="text-center py-2 text-sm font-semibold bg-emerald-600 text-white rounded">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* contact */}
+        <div className="mt-40 px-36 mb-12">
+          <div className="flex justify-center flex-col items-center gap-2">
+            <h1 className="text-3xl font-semibold  text-center">
+              Reach Out to Us
+            </h1>
+
+            <div className="flex items-center text-3xl text-emerald-600">
+              <TbMinus />
+              <TbActivityHeartbeat />
+              <TbMinus />
+            </div>
+          </div>
+
+          <div className="mt-12 flex gap-4">
+            <div className="flex flex-col gap-2 ">
+              <div className="outline outline-slate-300 p-4 rounded">
+                <h3 className="font-semibold text-sm">Dagupan City</h3>
+                <div className="mt-2 text-slate-500 flex flex-col gap-1">
+                  <div className="flex items-center gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <BiSolidPhone />
+                    </span>
+                    0939-902-6188
+                  </div>
+                  <div className="flex items-start gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <MdLocationOn />
+                    </span>
+                    2/F ENCARNACION BLDG., RIOFERIO RD., COR. ARELLANO ST.,
+                    DAGUPAN CITY, PANGASINAN
+                  </div>
+                  <div className="flex items-center gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <MdOutlineFacebook />
+                    </span>
+                    https://www.facebook.com/wundtpsychologicalinstitute
+                  </div>
+                </div>
+              </div>
+
+              <div className="outline outline-slate-300 p-4 rounded">
+                <h3 className="font-semibold text-sm">Vigan City</h3>
+                <div className="mt-2 text-slate-500 flex flex-col gap-1">
+                  <div className="flex items-center gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <BiSolidPhone />
+                    </span>
+                    0955-896-7345
+                  </div>
+                  <div className="flex items-start gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <MdLocationOn />
+                    </span>
+                    2/F EL SENOR JESUS APT., QUIRINO AVE., TAMAG VIGAN CITY,
+                    ILOCOS SUR
+                  </div>
+                  <div className="flex items-center gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <MdOutlineFacebook />
+                    </span>
+                    https://www.facebook.com/wundtvigan
+                  </div>
+                </div>
+              </div>
+
+              <div className="outline outline-slate-300 p-4 rounded">
+                <h3 className="font-semibold text-sm">Urdaneta City</h3>
+                <div className="mt-2 text-slate-500 flex flex-col gap-1">
+                  <div className="flex items-center gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <BiSolidPhone />
+                    </span>
+                    0969-265-3903
+                  </div>
+                  <div className="flex items-start gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <MdLocationOn />
+                    </span>
+                    3/F GR8 CORPORATE CENTRE BYPASS RD., ANONAS URDANETA CITY,
+                    PANGASINAN
+                  </div>
+                  <div className="flex items-center gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <MdOutlineFacebook />
+                    </span>
+                    https://www.facebook.com/wundturdaneta
+                  </div>
+                </div>
+              </div>
+
+              <div className="outline outline-slate-300 p-4 rounded">
+                <h3 className="font-semibold text-sm">Mangaldan</h3>
+                <div className="mt-2 text-slate-500 flex flex-col gap-1">
+                  <div className="flex items-center gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <BiSolidPhone />
+                    </span>
+                    0939-902-6188
+                  </div>
+                  <div className="flex items-start gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <MdLocationOn />
+                    </span>
+                    F&M BLDG. NATIONAL HI-WAY BARI MANGALDAN, PANGASINAN
+                  </div>
+                  <div className="flex items-center gap-4 text-sm ">
+                    <span className="text-emerald-600 text-base">
+                      <MdOutlineFacebook />
+                    </span>
+                    https://www.facebook.com/wundtpsychologicalinstitute
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex-1 outline outline-slate-300 rounded overflow-hidden">
+              <MapComponent />
+            </div>
+          </div>
+        </div>
+
+        {/* footer */}
+        <div className="flex justify-between items-center text-sm px-36 py-4 bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% text-white">
+          <p>© Wundt Psychological Institute. All Rights Reserved. 2025</p>
+          <p className="flex gap-1 items-center">
+            <MdOutlineAlternateEmail />
+            wundt_inst@yahoo.com.ph
+          </p>
         </div>
       </div>
     </>
