@@ -803,6 +803,7 @@ function App() {
         {/* contact */}
         <div className="px-6 lg:px-12">
           <div className="mt-40 mb-12  max-w-7xl mx-auto">
+            ``{" "}
             <div className="flex justify-center flex-col items-center gap-2">
               <h1 className="text-3xl font-semibold  text-center">
                 Reach Out to Us
@@ -814,7 +815,6 @@ function App() {
                 <TbMinus />
               </div>
             </div>
-
             <div className="mt-12 flex max-lg:flex-col-reverse gap-4">
               <div className="flex flex-col gap-2  flex-1">
                 <div className="outline outline-slate-300 p-4 rounded">
@@ -926,7 +926,7 @@ function App() {
 
         {/* footer */}
         <div className=" bg-radial-[at_-35%_15%] hover:bg-radial-[at_-20%_15%] from-green-500 to-emerald-600 to-75% px-6 lg:px-12">
-          <div className="flex justify-between text-sm text-white max-w-7xl mx-auto py-4">
+          <div className="flex max-md:flex-col items-center text-center gap-4 justify-between text-sm text-white max-w-7xl mx-auto py-4">
             <p>© Wundt Psychological Institute. All Rights Reserved. 2025</p>
             <p className="flex gap-1 items-center">
               <MdOutlineAlternateEmail />
