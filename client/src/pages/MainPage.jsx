@@ -34,7 +34,7 @@ function MainPage() {
   return (
     <div className="font-poppins text-slate-800">
       {/* nav */}
-      <header className=" bg-white sticky top-0 z-20 shadow-card2 px-6 lg:px-12">
+      <header className=" bg-white fixed top-0 left-0 right-0 z-20 shadow-card2 px-6 lg:px-12">
         <div className=" max-w-7xl mx-auto py-4 flex justify-between">
           <div className="flex items-center gap-2">
             <img src={logo} alt="logo" className="w-10 rounded-full" />
