@@ -38,7 +38,7 @@ function MainPage() {
         <div className=" max-w-7xl mx-auto py-4 flex justify-between">
           <div className="flex items-center gap-2">
             <img src={logo} alt="logo" className="w-10 rounded-full" />
-            <h1 className="font-black text-emerald-600 uppercase font-lisu text-xl">
+            <h1 className="font-black text-emerald-600 uppercase font-lisu text-lg sm:text-xl">
               Wundt Psychological Institute
             </h1>
           </div>
@@ -89,10 +89,10 @@ function MainPage() {
         style={{ backgroundImage: `url(${b1})` }}
         className="h-screen bg-cover bg-center"
       >
-        <div className="h-full backdrop-blur-sm bg-gradient-to-r from-white to-white/0 px-6 lg:px-12">
+        <div className="h-full backdrop-blur-sm bg-gradient-to-r from-white to-white/0 max-sm:to-white/10 px-6 lg:px-12">
           <div className="h-full max-w-7xl mx-auto flex items-center gap-8">
             <div className="max-w-[45rem]">
-              <h1 className="font-bold text-4xl ">
+              <h1 className="font-bold text-2xl sm:text-4xl ">
                 Premiere Provider of
                 <span className="text-emerald-600">
                   {" "}
@@ -106,18 +106,12 @@ function MainPage() {
                 to Operate No. 03
               </p>
 
-              <div className="mt-8 flex gap-4">
-                <button
-                  onClick={() => navigate("/appointment")}
-                  className="bg-radial-[at_-50%_-50%] from-green-500 to-emerald-600 to-75% text-sm text-white px-8 py-4 font-semibold rounded  "
-                >
-                  Get Appointment
-                </button>
-
-                <button className="bg-radial-[at_-50%_-50%] from-slate-600 to-slate-800 to-75% text-sm text-white px-8 py-4 font-semibold rounded  ">
-                  Learn More
-                </button>
-              </div>
+              <button
+                onClick={() => navigate("/appointment")}
+                className="bg-radial-[at_-50%_-50%] from-green-500 to-emerald-600 to-75% text-sm text-white px-8 py-4 font-semibold rounded mt-8 "
+              >
+                Get Appointment
+              </button>
             </div>
           </div>
         </div>
